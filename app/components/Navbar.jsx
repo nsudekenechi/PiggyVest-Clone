@@ -1,15 +1,26 @@
 "use client"
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from "../../public/images/logo.svg"
 import { HiMenu } from "react-icons/hi"
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false)
+    const [isSticky, setIsSticky] = useState(false);
+    useEffect(() => {
+        window.onscroll = (ev) => {
+            if (window.scrollY > 10) {
+                setIsSticky(true)
+            } else {
+                setIsSticky(false)
+            }
+
+        }
+    }, [])
     return (
         <>
             {/* Nav For Medium/Laptop screens */}
-            <nav className=' lg:py-5 lg:px-10 hidden  lg:flex justify-between items-center'>
+            <nav className={`duration-1000 ${isSticky ? "bg-white shadow-md" : "bg-transparent"} z-20 lg:py-5 lg:px-10 hidden sticky top-0  lg:flex justify-between items-center`}>
                 <ul className='flex items-center gap-x-20'>
                     <li>
                         <Link href={"/"}>
@@ -49,8 +60,8 @@ const Navbar = () => {
                 </ul>
             </nav>
             {/* Nav For Mobile */}
-            <nav className='block lg:hidden px-6 py-6 md:py-8 md:px-10 fixed left-0 w-[100%]  '>
-                <ul className='flex items-center justify-between '>
+            <nav className=' block lg:hidden  md:py-8 md:px-10 fixed z-10 left-0 w-[100%]  h-[100%] '>
+                <ul className=' flex items-center justify-between px-6 py-6 '>
                     <li>
                         <Link href={"/"}>
                             <Image src={Logo} width={150} alt='PiggyVest Logo' />
@@ -64,7 +75,7 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                <ul className={`flex flex-col   text-center gap-y-6  w-[100%]   py-20 relative ${showNav ? "opacity-100" : "opacity-0"}  duration-1000`}>
+                <ul className={`bg-[#f2f7f8] flex flex-col   text-center gap-y-6  w-[100%] h-[100vh] px-6  py-20 relative ${showNav ? "opacity-100" : "opacity-0"}  duration-1000`}>
                     <li>
                         <Link href={"/save"}>Save</Link>
                     </li>
