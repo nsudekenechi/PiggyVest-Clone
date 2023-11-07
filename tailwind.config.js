@@ -12,6 +12,20 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+        bounceSmall: {
+          "0%": {
+            transform: "translateY(0px)"
+          },
+          "100%": {
+            transform: "translateY(-20px)"
+          }
+        }
+      },
+
+      animation: {
+        bounceSmall: "bounceSmall 2.3s ease-in-out infinite alternate"
+      }
     },
   },
   plugins: [require("daisyui")],

@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <>
             {/* Nav For Medium/Laptop screens */}
-            <nav className='md:py-5 md:px-8 lg:py-5 lg:px-10 hidden  md:flex justify-between items-center'>
+            <nav className=' lg:py-5 lg:px-10 hidden  lg:flex justify-between items-center'>
                 <ul className='flex items-center gap-x-20'>
                     <li>
                         <Link href={"/"}>
@@ -49,7 +49,7 @@ const Navbar = () => {
                 </ul>
             </nav>
             {/* Nav For Mobile */}
-            <nav className='px-6 py-6 fixed left-0 w-[100%] block  md:hidden '>
+            <nav className='block lg:hidden px-6 py-6 md:py-8 md:px-10 fixed left-0 w-[100%]  '>
                 <ul className='flex items-center justify-between '>
                     <li>
                         <Link href={"/"}>
