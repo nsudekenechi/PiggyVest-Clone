@@ -20,7 +20,7 @@ const Navbar = () => {
     return (
         <>
             {/* Nav For Medium/Laptop screens */}
-            <nav className={`duration-1000 ${isSticky ? "bg-white shadow-md" : "bg-transparent"} z-20 lg:py-5 lg:px-10 hidden sticky top-0  lg:flex justify-between items-center`}>
+            <nav className={`duration-1000 ${isSticky ? "bg-white shadow-md" : "bg-transparent"}  z-20 lg:py-5 lg:px-10 hidden sticky top-0  lg:flex justify-between items-center`}>
                 <ul className='flex items-center gap-x-20'>
                     <li>
                         <Link href={"/"}>
@@ -60,8 +60,8 @@ const Navbar = () => {
                 </ul>
             </nav>
             {/* Nav For Mobile */}
-            <nav className=' block lg:hidden  md:py-8 md:px-10 fixed z-10 left-0 w-[100%]  h-[100%] '>
-                <ul className=' flex items-center justify-between px-6 py-6 '>
+            <nav className='  block lg:hidden  md:py-8 md:px-10 fixed z-10 left-0 w-[100%]  h-[100%] '>
+                <ul className={`duration-1000 ${isSticky ? "bg-white shadow-md" : "bg-transparent"} flex items-center justify-between px-6 py-6 `}>
                     <li>
                         <Link href={"/"}>
                             <Image src={Logo} width={150} alt='PiggyVest Logo' />
