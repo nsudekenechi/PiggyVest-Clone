@@ -3,6 +3,12 @@ import fixedSavings from "../../public/images/fixedSavings.avif"
 import goalOrientedSavings from "../../public/images/goalOrientedSavings.avif"
 import flexNaira_phone from "../../public/images/flexNaira_phone.avif"
 import flexDollar_phone from "../../public/images/flexDollar_phone.avif"
+import techPoint from "../../public/images/techpoint.png"
+import theGuardian from "../../public/images/theGuardian.png"
+import techCrunch from "../../public/images/techCrunch.png"
+import pymnts from "../../public/images/pymnts.svg"
+import fastcompany from "../../public/images/fastcompany.svg"
+import cio from "../../public/images/cio.svg"
 export const buildSavings = [
     {
         title: "Automated Savings",
@@ -48,5 +54,64 @@ export const buildSavings = [
         backgroundColor: "#0c1825",
         img: flexDollar_phone,
         hovered: false
+    }
+]
+
+export const featuredLogos = [
+    {
+        logo: techPoint,
+        href: "/"
+    },
+    {
+        logo: theGuardian,
+        href: "/"
+    },
+    {
+        logo: techCrunch,
+        href: "/"
+    },
+    {
+        logo: pymnts,
+        href: "/"
+    },
+    {
+        logo: fastcompany,
+        href: "/"
+    },
+    {
+        logo: cio,
+        href: "/"
+    }
+]
+
+export const footerLinks = [
+    {
+        name: "Products",
+        links: [
+            { text: "Piggybank", url: "" },
+            { text: "Invest", url: "" },
+            { text: "Safelock", url: "" },
+            { text: "Target Savings", url: "" },
+            { text: "Flex Naira", url: "" },
+            { text: "Flex Dollar", url: "" },
+        ]
+    },
+    {
+        name: "Company",
+        links: [
+            { text: "About", url: "" },
+            { text: "FAQs", url: "" },
+            { text: "Blog", url: "" },
+           
+           
+        ]
+    },
+    {
+        name: "Legal",
+        links: [
+            { text: "Terms", url: "" },
+            { text: "Privacy", url: "" },
+            { text: "Security", url: "" },
+        ]
     }
 ]

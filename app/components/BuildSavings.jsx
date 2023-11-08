@@ -26,11 +26,11 @@ const BuildSavings = ({ item }) => {
                     </div>
                     <div className="flex gap-x-3">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 10L20 15L15 20" stroke={`${!isHovered ? item.item.textColor : "#fff"}`} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path><path d="M4 4V11C4 12.0609 4.42143 13.0783 5.17157 13.8284C5.92172 14.5786 6.93913 15 8 15H20" stroke={`${!isHovered ? item.item.textColor : "#fff"}`} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ></path></svg>
-                        <Link href="/security" className='capitalize' style={{
+                        <div href="/security" className='capitalize' style={{
                             color: !isHovered ? item.item.textColor : "white"
                         }}>
                             {item.item.arrowText}
-                        </Link>
+                        </div>
                     </div>
                 </div>
                     <Image src={item.item.img} className={`bottom-[0%] absolute duration-500  ${!isHovered ? "right-[-100%] w-[0%]" : "w-[250px] right-5"}`} width={0} quality={100} alt={item.item.title} />

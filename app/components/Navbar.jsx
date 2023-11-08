@@ -20,7 +20,7 @@ const Navbar = () => {
     return (
         <>
             {/* Nav For Medium/Laptop screens */}
-            <nav className={`duration-1000 ${isSticky ? "bg-white shadow-md" : "bg-transparent"}  z-20 lg:py-5 lg:px-10 hidden sticky top-0  lg:flex justify-between items-center`}>
+            <nav className={`duration-1000 ${isSticky ? "bg-white shadow-md lg:py-5" : "bg-transparent lg:py-4"}  z-20  lg:px-10 hidden sticky top-0  lg:flex justify-between items-center`}>
                 <ul className='flex items-center gap-x-20'>
                     <li>
                         <Link href={"/"}>
