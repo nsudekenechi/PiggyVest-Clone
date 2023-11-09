@@ -2,8 +2,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
+import { motion } from 'framer-motion';
 
-const BuildSavings = ({ item }) => {
+const BuildSavings = ({ item, variant }) => {
     const [isHovered, setIsHovered] = useState(false)
     const handleHover = () => {
         setIsHovered(true);
@@ -13,10 +14,15 @@ const BuildSavings = ({ item }) => {
     }
     return (
         <Link href={`/${item.item.arrowText}`} className={`${item.index % 2 != 0 ? "lg:pr-10" : ""}`}>
-            <div className={`text-center lg:text-left  rounded-3xl shadow-sm relative  grid  grid-cols-2 overflow-hidden duration-500`} style={{
-                backgroundColor: !isHovered ? "white" : item.item.backgroundColor,
-                color: !isHovered ? "black" : "white"
-            }} onMouseOver={handleHover} onMouseOut={handleOut}>
+            <motion.div
+                viewport={{ once: true, amount: 0.25 }}
+                variants={variant}
+                initial={"initial"}
+                whileInView={"animate"}
+                className={`text-center lg:text-left  rounded-3xl shadow-sm relative  grid  grid-cols-2 overflow-hidden duration-500`} style={{
+                    backgroundColor: !isHovered ? "white" : item.item.backgroundColor,
+                    color: !isHovered ? "black" : "white"
+                }} onMouseOver={handleHover} onMouseOut={handleOut}>
                 <div className="col-span-2 py-10 px-5 md:px-10  flex flex-col justify-between h-[450px]" >
                     <div>
                         <h1 className="text-2xl lg:text-4xl font-bold  mb-5" style={{
@@ -33,8 +39,8 @@ const BuildSavings = ({ item }) => {
                         </div>
                     </div>
                 </div>
-                    <Image src={item.item.img} className={`bottom-[0%] absolute duration-500  ${!isHovered ? "right-[-100%] w-[0%]" : "w-[250px] right-5"}`} width={0} quality={100} alt={item.item.title} />
-            </div>
+                <Image src={item.item.img} className={`bottom-[0%] absolute duration-500  ${!isHovered ? "right-[-100%] w-[0%]" : "w-[250px] right-5"}`} width={0} quality={100} alt={item.item.title} />
+            </motion.div>
         </Link>
     )
 }

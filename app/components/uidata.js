@@ -9,6 +9,22 @@ import techCrunch from "../../public/images/techCrunch.png"
 import pymnts from "../../public/images/pymnts.svg"
 import fastcompany from "../../public/images/fastcompany.svg"
 import cio from "../../public/images/cio.svg"
+import safelock from "../../public/images/safelock.avif"
+import targetsavings from "../../public/images/targetsavings.avif"
+import flexnaira from "../../public/images/flexnaira.avif"
+import investify from "../../public/images/investify.avif"
+
+export const landingPageLogos = [
+    {
+        images: [safelock, targetsavings],
+        time: [1, 1.2]
+    },
+    {
+        images: [investify, flexnaira],
+        time: [1.4, 1.6]
+
+    },
+]
 export const buildSavings = [
     {
         title: "Automated Savings",
@@ -102,8 +118,8 @@ export const footerLinks = [
             { text: "About", url: "" },
             { text: "FAQs", url: "" },
             { text: "Blog", url: "" },
-           
-           
+
+
         ]
     },
     {
