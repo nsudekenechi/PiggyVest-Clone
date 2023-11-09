@@ -3,10 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import Logo from "../../public/images/logo.svg"
-import { HiMenu } from "react-icons/hi"
+import { HiMenu } from "react-icons/hi";
+import { saveNavs } from './uidata'
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false)
     const [isSticky, setIsSticky] = useState(false);
+    const [showSaveNav, isSetShowSaveNav] = useState(false);
     useEffect(() => {
         window.onscroll = (ev) => {
             if (window.scrollY > 10) {
@@ -17,6 +19,13 @@ const Navbar = () => {
 
         }
     }, [])
+
+    const handleShowSaveNav = () => {
+        isSetShowSaveNav(true)
+    }
+    const handleHideSaveNav = () => {
+        isSetShowSaveNav(false)
+    }
     return (
         <>
             {/* Nav For Medium/Laptop screens */}
@@ -27,9 +36,10 @@ const Navbar = () => {
                             <Image src={Logo} width={180} alt='PiggyVest Logo' />
                         </Link>
                     </li>
-                    <ul className='flex gap-x-5'>
-                        <li>
-                            <Link href={"/save"}>Save</Link>
+                    <ul className='flex gap-x-5 relative'>
+                        <li className=''>
+                            <Link href={"/save"} onMouseOver={handleShowSaveNav} onMouseOut={handleHideSaveNav}>Save</Link>
+
                         </li>
                         <li>
                             <Link href={"/invest"}>Invest</Link>
@@ -43,6 +53,21 @@ const Navbar = () => {
                         <li>
                             <Link href={"/resources"}>Resources</Link>
                         </li>
+                        <ul className={`bg-white absolute shadow-lg w-[150%] top-4 -left-[25%] rounded-3xl cursor-pointer p-5 ${showSaveNav ? "grid grid-cols-2 gap-y-3": "hidden"}`} onMouseOver={handleShowSaveNav} onMouseOut={handleHideSaveNav}>
+                            {
+                                saveNavs.map((nav, index) => (
+                                    <li>
+                                        <Link href={"/"} className={`flex gap-x-5 items-start hover:bg-[#f8fbfb] p-3 rounded-md ${nav.hover}`}>
+                                            <Image src={nav.img} quality={100} width={40} height={40} />
+                                            <div className=''>
+                                                <h1 className='text-sm font-bold'>{nav.title}</h1>
+                                                <p className='text-[#3d4f60] text-sm font-light'>{nav.subtitle}</p>
+                                            </div>
+                                        </Link>
+                                    </li>
+                                ))
+                            }
+                        </ul>
                     </ul>
                 </ul>
 

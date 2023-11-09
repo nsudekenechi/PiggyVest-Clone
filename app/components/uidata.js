@@ -13,6 +13,12 @@ import safelock from "../../public/images/safelock.avif"
 import targetsavings from "../../public/images/targetsavings.avif"
 import flexnaira from "../../public/images/flexnaira.avif"
 import investify from "../../public/images/investify.avif"
+import piggybank from "../../public/images/piggybank-icon.png"
+import safeLock from "../../public/images/safelock-icon.png"
+import targetIcon from "../../public/images/targets-icon.png"
+import flexNaira from "../../public/images/flex-naira-icon.png"
+import flexDollar from "../../public/images/flex-dollar-icon.png"
+
 
 export const landingPageLogos = [
     {
@@ -130,4 +136,38 @@ export const footerLinks = [
             { text: "Security", url: "" },
         ]
     }
+]
+
+export const saveNavs = [
+    {
+        img: piggybank,
+        title: "Piggybank",
+        subtitle: "Automated Savings",
+        hover: "hover:text-[#0d60d8]"
+    },
+    {
+        img: safeLock,
+        title: "Safelock",
+        subtitle: "Fixed Savings",
+        hover: "hover:text-[#2295f2]"
+    },
+    {
+        img: targetIcon,
+        title: "Target Savings",
+        subtitle: "Goal-oriented Savings",
+        hover: "hover:text-[#10b259]"
+    },
+    {
+        img: flexNaira,
+        title: "Flex naira",
+        subtitle: "Flexible Savings",
+        hover: "hover:text-[#ea4fa2]"
+    },
+    {
+        img: flexDollar,
+        title: "Flex dollar",
+        subtitle: "Dollar Savings",
+        hover: "hover:text-[#000]"
+    }
+
 ]
