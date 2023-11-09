@@ -73,12 +73,12 @@ const Navbar = () => {
 
                 <ul className='flex items-center gap-x-5'>
                     <li>
-                        <Link href={"/signup"} className='btn btn-outline normal-case hover:text-[#122231] hover:bg-transparent'>
+                        <Link href={"/login"} className='btn btn-outline normal-case hover:text-[#122231] hover:bg-transparent'>
                             Sign in
                         </Link>
                     </li>
                     <li>
-                        <Link href={"/signup"} className='btn btn-neutral normal-case bg-[#122231] text-white'>
+                        <Link href={"/register"} className='btn btn-neutral normal-case bg-[#122231] text-white'>
                             Create free account
                         </Link>
                     </li>

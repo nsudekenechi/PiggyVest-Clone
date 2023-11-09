@@ -9,11 +9,11 @@ import loginIcon4 from "../../public/images/login-logo-4.png"
 const page = () => {
     return (
         <main className='bg-[#062863]  flex flex-col justify-center items-center gap-y-10 p-10'>
-            <Link href={"/"}>
+            <Link href={"/"} className='relative z-10'>
                 <Image src={logo} width={200} />
             </Link>
 
-            <div className='bg-white w-[37%] p-10 rounded-t-3xl rounded-br-3xl'>
+            <div className='relative z-10 bg-white w-[37%] p-10 rounded-t-3xl rounded-br-3xl'>
                 <div className='text-center mb-10'>
                     <h1 className='text-2xl font-bold text-[#083e9e]'>Login to your account</h1>
                     <p className='text-sm font-light text-[#4a5568]'>Securely login to your PiggyVest</p>
@@ -37,9 +37,9 @@ const page = () => {
                 </form>
 
             </div>
-            <div className='flex flex-col justify-center items-center gap-y-3'>
-                <Link href={"/"} className='text-white text-xs'>
-                    Don&apos;t  have an account?Register
+            <div className='relative z-10 flex flex-col justify-center items-center gap-y-3'>
+                <Link href={"/register"} className='text-white text-xs'>
+                    Don&apos;t  have an account? Register
                 </Link>
                 <Link href={"/"} className='text-white text-xs'>
                     Forgot Password?
