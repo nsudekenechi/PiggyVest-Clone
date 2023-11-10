@@ -10,7 +10,7 @@ const page = () => {
     return (
         <main className='bg-[#062863]  flex flex-col justify-center items-center gap-y-10 p-10'>
             <Link href={"/"} className='relative z-10'>
-                <Image src={logo} width={200} />
+                <Image src={logo} width={200} alt='logo'/>
             </Link>
 
             <div className='relative z-10 bg-white w-[37%] p-10 rounded-t-3xl rounded-br-3xl'>
@@ -46,14 +46,14 @@ const page = () => {
                 </Link>
             </div>
             <div className='fixed left-0 -top-16 flex justify-between w-[100%]'>
-                <Image src={loginIcon} width={200} quality={100}/>
-                <Image src={loginIcon2} width={200} quality={100} className='relative -right-[8.5%] top-14'/>
+                <Image src={loginIcon} width={200} quality={100} alt='loginIcon' />
+                <Image src={loginIcon2} width={200} quality={100} className='relative -right-[8.5%] top-14' alt='loginIcon2' />
 
             </div>
 
             <div className='fixed left-0 top-[70%] flex justify-between w-[100%]'>
-                <Image src={loginIcon3} width={200} quality={100} className='relative -left-[6.5%] top-10'/>
-                <Image src={loginIcon4} width={200} quality={100} className='relative -right-[6.5%] top-0'/>
+                <Image src={loginIcon3} width={200} quality={100} className='relative -left-[6.5%] top-10' alt='loginIcon3' />
+                <Image src={loginIcon4} width={200} quality={100} className='relative -right-[6.5%] top-0' alt='loginIcon4' />
 
             </div>
         </main>

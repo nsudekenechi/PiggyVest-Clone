@@ -56,9 +56,9 @@ const Navbar = () => {
                         <ul className={`bg-white absolute shadow-lg w-[150%] top-4 -left-[25%] rounded-3xl cursor-pointer p-5 ${showSaveNav ? "grid grid-cols-2 gap-y-3": "hidden"}`} onMouseOver={handleShowSaveNav} onMouseOut={handleHideSaveNav}>
                             {
                                 saveNavs.map((nav, index) => (
-                                    <li>
+                                    <li key={index}>
                                         <Link href={"/"} className={`flex gap-x-5 items-start hover:bg-[#f8fbfb] p-3 rounded-md ${nav.hover}`}>
-                                            <Image src={nav.img} quality={100} width={40} height={40} />
+                                            <Image src={nav.img} quality={100} width={40} height={40} alt={nav.title}/>
                                             <div className=''>
                                                 <h1 className='text-sm font-bold'>{nav.title}</h1>
                                                 <p className='text-[#3d4f60] text-sm font-light'>{nav.subtitle}</p>

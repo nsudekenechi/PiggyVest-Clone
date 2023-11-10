@@ -11,12 +11,10 @@ import securityLock from "../public/images/securitylock.svg"
 import myInvestments from "../public/images/myInvestments.avif"
 import stories_phone from '../public/images/stories_phone.png'
 
-
 // Components Imports
+import Navbar from "./components/Navbar";
 import { buildSavings, featuredLogos, landingPageLogos } from "./components/uidata";
 import BuildSavings from "./components/BuildSavings";
-
-import Navbar from "./components/Navbar";
 import { AiFillApple } from "react-icons/ai"
 import Footer from "./components/Footer";
 import Animate from "./components/Animate";
