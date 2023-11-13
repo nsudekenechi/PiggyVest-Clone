@@ -12,6 +12,7 @@ import coreSavings from '../../public/images/core-savings-icon-min.png';
 import completeSetup from '../../public/images/complete-setup-v3.jpg';
 import iosBadge from '../../public/images/iosbadge-101-image.png'
 import googleBadge from '../../public/images/google-play-badge.png'
+import smallPicture from '../../public/images/smallpic4440888833.jpeg'
 
 import Link from 'next/link'
 import { dashboardHome, toDoList } from '../components/uidata'
@@ -109,21 +110,34 @@ const Home = () => {
             </div>
           </div>
 
-          <div>
-            <p className='text-xs mb-3 uppercase'>Complete your setup</p>
-            <Link href={""} className='block mb-14'>
-              <Image src={completeSetup} width={300} height={300} quality={100} className='rounded-xl' />
-            </Link>
-
-            <p className='text-xs mb-3 uppercase'>Download the mobile app</p>
-            <div className='flex items-center gap-x-5'>
-              <Link href={""}>
-                <Image src={iosBadge} width={100}  quality={100} className='' />
-              </Link>
-              <Link href={""}>
-                <Image src={googleBadge} width={100}  quality={100} className='' />
+          <div className='flex flex-col gap-y-14'>
+            <div>
+              <p className='text-[0.625rem] mb-3 uppercase'>Complete your setup</p>
+              <Link href={""} className=''>
+                <Image src={completeSetup} width={300} height={300} quality={100} className='rounded-xl' />
               </Link>
             </div>
+
+            <div>
+              <p className='text-[0.625rem] mb-3 uppercase'>Download the mobile app</p>
+              <div className='flex items-center gap-x-5'>
+                <Link href={"https://www.piggyvest.com/appstorelink/ios"}>
+                  <Image src={iosBadge} width={500} quality={100} alt='iosBadge' />
+                </Link>
+                <Link href={"https://www.piggyvest.com/appstorelink/android"}>
+                  <Image src={googleBadge} width={500} quality={100} className='' alt='googleBadge' />
+                </Link>
+              </div>
+            </div>
+
+            <div>
+              <p className='text-[0.625rem] mb-3 uppercase'>#MEETAPIGGYVESTSAVER: MUYIWA</p>
+              <Link href={"https://www.youtube.com/watch?v=_HcNchGk_A0si%3Dh05iPgQIy1i-sD2W&feature=youtu.be"}>
+                <Image src={smallPicture} width={300} quality={100} alt='' className='rounded-2xl'/>
+              </Link>
+            </div>
+
+
 
           </div>
         </div>
