@@ -18,4 +18,6 @@
 body{
   color: #122231;
 }
-
+.rounded-global{
+  @apply rounded-t-md rounded-br-md; 
+}

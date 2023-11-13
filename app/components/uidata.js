@@ -267,5 +267,56 @@ export const toDoList = [
     {
         title: "Refer a friend, earn ₦1,000.00 bonus 🎉",
         isChecked: false
-}
+    }
+]
+
+export const dashboardSavings = [
+    {
+        title: "piggybank",
+        subtitle: "Strict savings automatically. Daily, weekly or Monthly. 10% p.a",
+        amount: "₦0.00",
+        bgColor: "rgb(204, 240, 254)",
+        textColor: "rgb(13, 96, 216)",
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-shield" ><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+    },
+    {
+        title: "flex naira",
+        subtitle: "Flexible savings for emergencies. Free transfers, withdrawals etc. 8% p.a",
+        amount: "₦0.00",
+        bgColor: "rgb(255, 234, 245)",
+        textColor: "rgb(231, 67, 156)",
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-film" ><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+    },
+    {
+        title: "safelock",
+        subtitle: "Lock funds to avoid temptations. Upfront interest. Up to 13% p.a",
+        amount: "₦0.00",
+        bgColor: "rgb(231, 246, 255)",
+        textColor: "rgb(34, 149, 242)",
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-lock" ><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+    },
+    {
+        title: "targets",
+        subtitle: "Reach your unique individual saving goals. 9% p.a",
+        amount: "₦0.00",
+        bgColor: "rgb(220, 255, 235)",
+        textColor: "rgb(39, 174, 96)",
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-target" ><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+    },
+    {
+        title: "flex dollar",
+        subtitle: "Save & grow your wealth in dollars. Up to 7% p.a in dollars",
+        amount: "₦0.00",
+        bgColor: "rgb(239, 244, 245)",
+        textColor: "rgb(0, 0, 0)",
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-dollar-sign" ><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+    },
+    {
+        title: "PocketApp",
+        subtitle: "Withdraw your savings to your pocket faster ⚡️",
+        amount: "Connect Account",
+        bgColor: "rgb(241, 236, 254)",
+        textColor: "rgb(117, 63, 246)",
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-at-sign" ><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>
+    }
 ]
