@@ -146,31 +146,31 @@ export const saveNavs = [
         img: piggybank,
         title: "Piggybank",
         subtitle: "Automated Savings",
-        hover: "hover:text-[#0d60d8]"
+        hover: "hover:text-[#0d60d8"
     },
     {
         img: safeLock,
         title: "Safelock",
         subtitle: "Fixed Savings",
-        hover: "hover:text-[#2295f2]"
+        hover: "hover:text-[#2295f2"
     },
     {
         img: targetIcon,
         title: "Target Savings",
         subtitle: "Goal-oriented Savings",
-        hover: "hover:text-[#10b259]"
+        hover: "hover:text-[#10b259"
     },
     {
         img: flexNaira,
         title: "Flex naira",
         subtitle: "Flexible Savings",
-        hover: "hover:text-[#ea4fa2]"
+        hover: "hover:text-[#ea4fa2"
     },
     {
         img: flexDollar,
         title: "Flex dollar",
         subtitle: "Dollar Savings",
-        hover: "hover:text-[#000]"
+        hover: "hover:text-[#000"
     }
 
 ];
@@ -197,14 +197,75 @@ export const dashboardNavs = [
 
     },
     {
-        left: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" ><circle cx="12" cy="7" r="4" ></circle><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" ></path></svg>,
+        left: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><circle cx="12" cy="7" r="4" ></circle><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" ></path></svg>,
         right: "account",
 
 
     },
     {
-        left: <AiOutlinePoweroff size={24} color="#fff"/>,
+        left: <AiOutlinePoweroff size={24} color="#fff" />,
         right: "logout",
 
     }
+]
+
+export const dashboardHome = [
+    {
+        href: "",
+        text: "Total Savings",
+        amount: "₦0.00",
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-shield" ><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>,
+        bg: "#0D60D8"
+    },
+    {
+        href: "",
+        text: "Total Savings",
+        amount: "₦0.00",
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-trending-up" ><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>,
+        bg: "#7913E5"
+    },
+    {
+        href: "",
+        text: "Flex Dollar",
+        amount: "₦0.00",
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-dollar-sign" ><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>,
+        bg: "#222222"
+    },
+    {
+        href: "",
+        text: "Flex Naira",
+        amount: "₦0.00",
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E7439C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-film" ><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>,
+        bg: "#fff"
+    },
+    {
+        href: "",
+        text: "Link PocketApp",
+        amount: "₦***",
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-at-sign" ><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>,
+        bg: "#753FF6"
+    }
+]
+
+export const toDoList = [
+    {
+        title: "Add your BVN or NIN now",
+        isChecked: false
+    },
+    {
+        title: "Tell us more about yourself",
+        isChecked: false
+    },
+    {
+        title: "Securely add a valid debit card",
+        isChecked: false
+    },
+    {
+        title: "Set your security question now!",
+        isChecked: false
+    },
+    {
+        title: "Refer a friend, earn ₦1,000.00 bonus 🎉",
+        isChecked: false
+}
 ]
