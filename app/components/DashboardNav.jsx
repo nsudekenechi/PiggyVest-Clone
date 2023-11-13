@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 const DashboardNav = () => {
   const pathname = usePathname()
   return (
-    <nav className='bg-[#062863] h-[100vh] fixed w-[20vw] p-10 pl-5'>
+    <nav className='bg-[#062863] h-[100vh] fixed w-[20vw] p-10 pl-5 '>
       <ul>
         {dashboardNavs.map((item, index) => {
           const href = `/dashboard${item.right == "home" ? "" : `/${item.right}`}`

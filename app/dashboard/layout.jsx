@@ -9,10 +9,10 @@ const Layout = ({ children }) => {
   }
   return (
     <div className='flex'>
-      <aside className={`w-[20%] h-[100vh] `}>
+      <aside className={`w-[20%] h-[100vh] hidden lg:block`}>
         <DashboardNav panel={{ handleShowPanel, showPanel }} />
       </aside>
-      <main className=' p-14  w-[80%] '>
+      <main className='p-5 lg:p-14  lg:w-[80%] '>
         {children}
       </main>
     </div>
