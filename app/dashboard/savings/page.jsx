@@ -28,16 +28,18 @@ const Savings = () => {
         <div className='col-span-2 lg:col-span-1 mb-10'>
           <p className='text-xs mb-1 uppercase'>Complete your setup</p>
 
-          <Image src={completeSetup} width={300} height={300} quality={100} className=' w-[100%] rounded-xl' />
+          <Link href={""}>
+            <Image src={completeSetup} width={300} height={300} quality={100} className=' w-[100%] rounded-xl' />
+          </Link>
         </div>
 
         {
           dashboardSavings.map((item, index) => (
-            <Link key={index} href={"/"} style={{backgroundColor:item.bgColor, color:item.textColor}} className='px-5 py-10 flex flex-col gap-y-3 rounded-t-3xl rounded-br-3xl rounded-bl-xl'>
-                {item.icon}
-                <p className='capitalize text-xl font-bold' >{item.title}</p>
-                <p className='text-sm text-black'>{item.subtitle}</p>
-                <p className='font-bold'>{item.amount}</p>
+            <Link key={index} href={"/"} style={{ backgroundColor: item.bgColor, color: item.textColor }} className='px-5 py-10 flex flex-col gap-y-3 rounded-t-3xl rounded-br-3xl rounded-bl-xl'>
+              {item.icon}
+              <p className='capitalize text-xl font-bold' >{item.title}</p>
+              <p className='text-sm text-black'>{item.subtitle}</p>
+              <p className='font-bold'>{item.amount}</p>
             </Link>
           ))
         }

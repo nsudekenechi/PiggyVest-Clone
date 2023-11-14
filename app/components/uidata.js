@@ -19,6 +19,11 @@ import targetIcon from "../../public/images/targets-icon.png"
 import flexNaira from "../../public/images/flex-naira-icon.png"
 import flexDollar from "../../public/images/flex-dollar-icon.png"
 import logo from "../../public/images/piggyvest-logo.0b78a8fa.svg"
+import thumb from "../../public/images/thumb.inv68202cdd88.jpg"
+import thumb1 from "../../public/images/thumb.inv470f16e718.png"
+import thumb2 from "../../public/images/thumb.inv88c81f074f.jpg"
+import thumb3 from "../../public/images/thumb.inv97031b1a73.jpg"
+
 import Image from 'next/image'
 import { AiOutlinePoweroff } from "react-icons/ai"
 
@@ -293,7 +298,7 @@ export const dashboardSavings = [
         amount: "₦0.00",
         bgColor: "rgb(231, 246, 255)",
         textColor: "rgb(34, 149, 242)",
-        icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-lock" ><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"  ><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
     },
     {
         title: "targets",
@@ -301,7 +306,7 @@ export const dashboardSavings = [
         amount: "₦0.00",
         bgColor: "rgb(220, 255, 235)",
         textColor: "rgb(39, 174, 96)",
-        icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-target" ><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
     },
     {
         title: "flex dollar",
@@ -309,7 +314,7 @@ export const dashboardSavings = [
         amount: "₦0.00",
         bgColor: "rgb(239, 244, 245)",
         textColor: "rgb(0, 0, 0)",
-        icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-dollar-sign" ><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"  ><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
     },
     {
         title: "PocketApp",
@@ -317,6 +322,54 @@ export const dashboardSavings = [
         amount: "Connect Account",
         bgColor: "rgb(241, 236, 254)",
         textColor: "rgb(117, 63, 246)",
-        icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-at-sign" ><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"  ><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>
+    }
+]
+
+export const dashboardInvest = [
+    {
+        title: "My investments",
+        href: "/dashboard/investify",
+        icon: <>
+            <circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle>
+        </>
+    },
+
+    {
+        title: "Explore",
+        href: "/dashboard/investify/explore",
+        icon: <>
+            <circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+        </>
+    },
+    {
+        title: "Completed",
+        href: "/dashboard/investify/completed",
+        icon: <>
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </>
+    }
+]
+
+export const dashboardFilterInvest = ["All", "Fixed Income", "Real-Estate", "Agriculture", "Transportation"];
+
+export const dashboardInvestments = [
+    {
+        img: thumb,
+        title: "Cashew Nut Investment ",
+        category: "Agriculture"
+    },
+    {
+        img: thumb1,
+        title: "Corportate debt notes series xvi",
+        category: "Transportation"
+
+    },
+    {
+        img: thumb3,
+        title: "Corportate debt notes series xvi",
+        category:"Fixed Income"
+
     }
 ]

@@ -9,7 +9,7 @@ const DashboardNav = () => {
     <nav className='bg-[#062863] h-[100vh] fixed w-[20vw] p-10 pl-5 '>
       <ul>
         {dashboardNavs.map((item, index) => {
-          const href = `/dashboard${item.right == "home" ? "" : `/${item.right}`}`
+          const href = `/dashboard${item.right == "home" ? "" : item.right == "invest" ? "/investify" : `/${item.right}`}`
           return (
             <li key={index} className={`${index == 0 ? "mb-[35%]" : index == 4 ? "mb-[65%]" : "mb-7"}`}>
               {index < 1 ?
