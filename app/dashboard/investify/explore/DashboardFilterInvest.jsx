@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { dashboardFilterInvest, dashboardInvestments } from '@/app/components/uidata';
 import thumb from "../../../../public/images/thumb.inv68202cdd88.jpg"
 import Image from 'next/image';
@@ -16,7 +16,7 @@ const DashboardFilterInvest = () => {
         });
     }
     return (
-        <div className=''>
+        <div className='' >
             <div className='p-3'>
                 <div className='flex  gap-x-5 overflow-auto '>
                     {
@@ -35,15 +35,15 @@ const DashboardFilterInvest = () => {
                     <Image src={item.img} width={500} quality={100} alt='thumb' className='object-cover h-[150px] rounded-global' />
                     <div className='col-span-2 '>
                         <h1 className='text-xl font-bold '>{item.title}</h1>
-                        <p className='text-xs'><span className='text-green-500'>{(Math.random() * 100).toFixed(2)}%</span> returns in {Math.floor(Math.random() * 12)} months</p>
+                        <p className='text-xs' suppressHydrationWarning><span className='text-green-500' suppressHydrationWarning>{(Math.random() * 100).toFixed(2)}%</span> returns in {Math.floor(Math.random() * 12)} months</p>
                         <div className="grid grid-cols-3 py-5">
                             <div>
-                                <p className='text-[#7913e5] text-lg'>₦{Math.floor(Math.random() * 100000)}</p>
+                                <p className='text-[#7913e5] text-lg' suppressHydrationWarning>₦{Math.floor(Math.random() * 100000)}</p>
                                 <p className='text-xs'>per unit</p>
                             </div>
 
                             <div>
-                                <p className='text-[#7913e5] text-lg'>{Math.floor(Math.random() * 200)}</p>
+                                <p className='text-[#7913e5] text-lg' suppressHydrationWarning>{Math.floor(Math.random() * 200)}</p>
                                 <p className='text-xs'>Investors</p>
                             </div>
                         </div>

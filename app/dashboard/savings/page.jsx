@@ -15,7 +15,7 @@ const Savings = () => {
             <h1 className='text-3xl font-bold mb-2'>Savings</h1>
             <p className='text-[#718096] font-light text-sm'>Let's see how well you're doing</p>
           </div>
-          <Image src={avatar} width={60} quality={100} />
+          <Image src={avatar} width={60} quality={100} alt='avatar'/>
         </div>
       </header>
 
@@ -29,7 +29,7 @@ const Savings = () => {
           <p className='text-xs mb-1 uppercase'>Complete your setup</p>
 
           <Link href={""}>
-            <Image src={completeSetup} width={300} height={300} quality={100} className=' w-[100%] rounded-xl' />
+            <Image src={completeSetup} width={300} height={300} quality={100} className=' w-[100%] rounded-xl' alt='completeSetup'/>
           </Link>
         </div>
 

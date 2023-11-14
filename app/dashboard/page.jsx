@@ -27,7 +27,7 @@ const Home = () => {
             <h1 className='text-3xl font-bold mb-1'>Nsude,</h1>
             <p className='text-[#718096] font-light text-sm'>Good evening, wash your hands 🌙</p>
           </div>
-          <Image src={avatar} width={60} quality={100} />
+          <Image alt='avatar' src={avatar} width={60} quality={100} />
         </div>
 
         <div className='pt-10 pb-2 flex justify-between items-center'>
@@ -45,7 +45,7 @@ const Home = () => {
                   <h3 className='text-lg font-bold'>{item.amount}</h3>
                 </div>
               </div>
-              <Image src={index != 4 ? pattern : blueVirtual} width={500} quality={100} className='absolute top-0 w-[100%] h-[100%] rounded-full' />
+              <Image src={index != 4 ? pattern : blueVirtual} width={500} quality={100} className='absolute top-0 w-[100%] h-[100%] rounded-full' alt='pattern'/>
             </Link>
           ))}
 
@@ -103,7 +103,7 @@ const Home = () => {
           <div className='hidden lg:block'>
             <p className='text-xs lg:text-[0.625rem] mb-3 uppercase'>Complete your setup</p>
             <Link href={""} >
-              <Image src={completeSetup} width={300} height={300} quality={100} className='rounded-xl w-[100%]' />
+              <Image src={completeSetup} width={300} height={300} quality={100} className='rounded-xl w-[100%]' alt='complete setup'/>
             </Link>
           </div>
 
@@ -122,7 +122,7 @@ const Home = () => {
           <div>
             <p className='text-xs lg:text-[0.625rem] mb-3 uppercase'>#MEETAPIGGYVESTSAVER: MUYIWA</p>
             <Link href={"https://www.youtube.com/watch?v=_HcNchGk_A0si%3Dh05iPgQIy1i-sD2W&feature=youtu.be"}>
-              <Image src={smallPicture} width={300} quality={100} alt='' className='rounded-2xl w-[100%]' />
+              <Image src={smallPicture} width={300} quality={100} alt='smallPicture' className='rounded-2xl w-[100%]' />
             </Link>
           </div>
 
