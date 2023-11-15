@@ -7,13 +7,28 @@ import { motion } from 'framer-motion'
 import { footerLinks } from './uidata'
 import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter, BiLogoTiktok, BiLogoYoutube } from "react-icons/bi"
 const Footer = ({ fadeUp }) => {
-    const footerSocialIcons = [<BiLogoFacebook />, <BiLogoInstagram />, <BiLogoTwitter />, <BiLogoTiktok />, <BiLogoYoutube />]
+    const footerSocialIcons = [
+        {
+            icon: BiLogoFacebook
+        },
+        {
+            icon: BiLogoInstagram
+        },
+        {
+            icon: BiLogoTwitter
+        },
+        {
+            icon: BiLogoTiktok
+        },
+        {
+            icon: BiLogoYoutube
+        }]
     return (
-        <motion.footer 
-        transition={{ type: "spring" }} 
-        variants={fadeUp} initial={"initial"} 
-        whileInView={"animate"}
-         className='px-5  md:px-32 lg:px-10 pb-24 bg-white text-sm font-light'>
+        <motion.footer
+            transition={{ type: "spring" }}
+            variants={fadeUp} initial={"initial"}
+            whileInView={"animate"}
+            className='px-5  md:px-32 lg:px-10 pb-24 bg-white text-sm font-light'>
             <section className='grid grid-cols-1 lg:grid-cols-3 lg:gap-x-10 '>
                 <div className='col-span-2 grid grid-cols-1 lg:grid-cols-3 gap-10'>
                     <ul className='flex flex-col gap-y-5'>
@@ -51,7 +66,7 @@ const Footer = ({ fadeUp }) => {
                             footerSocialIcons.map((item, index) => (
                                 <li key={index}>
                                     <Link href={""} >
-                                        {item}
+                                        <item.icon/>
                                     </Link>
                                 </li>
                             ))

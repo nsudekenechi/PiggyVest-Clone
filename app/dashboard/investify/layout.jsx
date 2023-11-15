@@ -4,12 +4,9 @@ import avatar from "../../../public/images/dashboard_avatar.png"
 import Image from 'next/image'
 import Link from 'next/link'
 import { BiInfoCircle } from 'react-icons/bi'
-import styles from "./style.module.css"
-import { usePathname } from 'next/navigation'
-import { dashboardInvest } from '@/app/components/uidata';
 import completeSetup from '../../../public/images/complete-setup-v3.jpg';
+import DashboardInvest from './DashboardInvest';
 const layout = ({ children }) => {
-    const path = usePathname();
     return (
         <div>
             <header>
@@ -17,7 +14,7 @@ const layout = ({ children }) => {
                     <div>
                         <h1 className='text-3xl font-bold mb-2'>Investify</h1>
                     </div>
-                    <Image src={avatar} width={60} quality={100} alt='avatar'/>
+                    <Image src={avatar} width={60} quality={100} alt='avatar' />
                 </div>
             </header>
             <main className='grid grid-cols-1 lg:grid-cols-3 gap-x-10 py-10 relative'>
@@ -35,22 +32,7 @@ const layout = ({ children }) => {
                     </div>
 
                     <div className=" border rounded-global ">
-                        <div className='p-3 flex border-b relative gap-x-10'>
-                            {dashboardInvest.map((item, index) => (
-                                <Link key={index} href={item.href} className={`flex items-center text-sm gap-x-2 ${path == item.href ? styles.active : 'text-gray-400'}`}>
-                                    <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round"  width={25} xmlns="http://www.w3.org/2000/svg">
-                                        {item.icon}
-                                    </svg>
-
-                                    {item.title}
-                                </Link>
-                            ))}
-
-
-
-
-                        </div>
-
+                        <DashboardInvest />
                         <div>
                             {children}
                         </div>
@@ -66,7 +48,7 @@ const layout = ({ children }) => {
                     <div className=" h-fit rounded-global">
                         <p className='text-xs lg:text-[0.625rem] mb-3 uppercase'>Complete your setup</p>
                         <Link href={""} >
-                            <Image src={completeSetup} width={300} height={300} quality={100} className='rounded-xl w-[100%]' alt='completeSetup'/>
+                            <Image src={completeSetup} width={300} height={300} quality={100} className='rounded-xl w-[100%]' alt='completeSetup' />
                         </Link>
 
                     </div>

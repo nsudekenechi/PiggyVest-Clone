@@ -13,7 +13,7 @@ const Savings = () => {
         <div className='flex justify-between items-center'>
           <div>
             <h1 className='text-3xl font-bold mb-1'>Savings</h1>
-            <p className='text-[#718096] font-light '>Let's see how well you're doing</p>
+            <p className='text-[#718096] font-light '>Let&apos;s see how well you&apos;re doing</p>
           </div>
           <Image src={avatar} width={60} quality={100} alt='avatar'/>
         </div>
