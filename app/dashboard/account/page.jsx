@@ -2,18 +2,20 @@ import React from 'react'
 import security from "../../../public/images/2-factor-min.png"
 import Link from 'next/link'
 import Image from 'next/image'
-import {FaAngleRight} from "react-icons/fa6"
+import { FaAngleRight } from "react-icons/fa6"
 import { myAccount } from '@/app/components/uidata';
 
-const Account = () => {
+import ImageContainer from './ImageContainer'
+import ShowDashboardBalances from './ShowDashboardBalances'
 
+const Account = () => {
   return (
     <div>
       <div>
         <h1 className='text-3xl font-bold mb-1'>My Account</h1>
         <p className='text-[#718096] font-light '>Nsude Kenechi</p>
 
-        <div className='grid grid-cols-3 gap-x-10'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-x-20'>
           <div className="">
             <Link href={"/"} className='block my-10'>
               <Image src={security} width={300} quality={100} className='rounded-xl' alt='security' />
@@ -33,6 +35,34 @@ const Account = () => {
                 <span className='text-xs font-light capitalize'>{item.title}</span>
               </Link>
             ))}
+          </div>
+          <div className="col-span-2 p-5">
+            
+            <ImageContainer/>
+            <h1 className='text-2xl font-bold mb-1 text-center'>Nsude Kenechi</h1>
+            <div className="grid grid-cols-1 lg:grid-cols-2 py-5 gap-5">
+                <Link href={""} className='border  rounded-global p-5'>
+                  <h1 className='text-xl font-semibold'>Get Flex Number</h1>
+                  <p className='text-sm font-light'>Add BVN or NIN</p>
+                </Link>
+                <Link href={""} className='border  rounded-global p-5'>
+                  <h1 className='text-xl font-semibold'>0</h1>
+                  <p className='text-sm font-light'>Piggy Points</p>
+                </Link>
+                <Link href={""} className='border  rounded-global p-5'>
+                  <h1 className='text-xl font-semibold'># Piggylink ID</h1>
+                  <p className='text-sm font-light'>Create a Piggylink ID</p>
+                </Link>
+                <Link href={""} className='border  rounded-global p-5'>
+                  <h1 className='text-xl font-semibold'>0</h1>
+                  <p className='text-sm font-light'>Referral Earnings</p>
+                </Link>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-4 items-center">
+              <h1 className='font-semibold col-span-3'>Show Dashboard Balances</h1>
+              <ShowDashboardBalances/>
+            </div>
           </div>
         </div>
       </div>
