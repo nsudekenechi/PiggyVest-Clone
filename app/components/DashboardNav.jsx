@@ -24,7 +24,7 @@ const DashboardNav = () => {
                 </div> :
                 // Adding active to navs when nav have the same path with pathname or
                 // pathname == href that is when we are on home nav
-                <Link href={href} className={`capitalize duration-100 ${pathname.split("/")[2] == href.split("/")[2] || pathname == href ? "translate-x-1" : "translate-x-0"} grid grid-cols-3 items-center px-2 `}>
+                <Link href={href} className={`capitalize duration-500 ${pathname.split("/")[2] == href.split("/")[2] || pathname == href ? "translate-x-2" : "translate-x-0"} grid grid-cols-3 items-center px-2 `}>
                   {item.left}
                   <span className={`text-sm py-2  pl-5 col-span-2 rounded-t-lg rounded-br-lg ${pathname.split("/")[2] == href.split("/")[2] || pathname == href ? "bg-white" : "text-white"}`}> {item.right}</span>
                 </Link>
