@@ -256,23 +256,28 @@ export const dashboardHome = [
 export const toDoList = [
     {
         title: "Add your BVN or NIN now",
-        isChecked: false
+        isChecked: false,
+        href:"bvn"
     },
     {
         title: "Tell us more about yourself",
-        isChecked: false
+        isChecked: false,
+        href:"moreinfo"
     },
     {
         title: "Securely add a valid debit card",
-        isChecked: false
+        isChecked: false,
+        href: "adddebit"
     },
     {
         title: "Set your security question now!",
-        isChecked: false
+        isChecked: false,
+        href:"securityquestion"
     },
     {
         title: "Refer a friend, earn ₦1,000.00 bonus 🎉",
-        isChecked: false
+        isChecked: false,
+        href:"referfriend"
     }
 ]
 

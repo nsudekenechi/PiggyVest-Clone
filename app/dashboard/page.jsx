@@ -58,7 +58,7 @@ const Home = () => {
           <p className='text-xs mb-5'>TO-DO LIST</p>
           {toDoList.map((item, index) => {
             if (!item.isChecked) {
-              return <ToDo key={index} title={item.title} />
+              return <ToDo key={index} title={item.title} href={item.href}/>
 
             }
           })}
