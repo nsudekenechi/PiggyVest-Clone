@@ -17,16 +17,14 @@ import smallPicture from '../../public/images/smallpic4440888833.jpeg'
 import Link from 'next/link'
 import { dashboardHome, toDoList } from '../components/uidata'
 import ToDo from '../components/ToDo'
+import Greetings from './Greetings'
 
 const Home = () => {
   return (
     <div>
       <header>
         <div className='flex justify-between items-center'>
-          <div>
-            <h1 className='text-3xl font-bold mb-1'>Nsude,</h1>
-            <p className='text-[#718096] font-light text-sm'>Good evening, wash your hands 🌙</p>
-          </div>
+          <Greetings/>
           <Image alt='avatar' src={avatar} width={60} quality={100} />
         </div>
 

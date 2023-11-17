@@ -9,7 +9,7 @@ const page = () => {
   const router = useRouter()
   return (
     <Modal color="text-black">
-      <div className="p-10">
+      <div className="px-10">
         <h1 className='text-2xl font-bold'>Verify Your Identity</h1>
         <p className='text-xs mb-10'>You can verify your identity on PiggyVest through your BVN or NIN</p>
 
