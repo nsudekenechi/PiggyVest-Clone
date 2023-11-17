@@ -257,12 +257,12 @@ export const toDoList = [
     {
         title: "Add your BVN or NIN now",
         isChecked: false,
-        href:"bvn"
+        href: "bvn"
     },
     {
         title: "Tell us more about yourself",
         isChecked: false,
-        href:"moreinfo"
+        href: "moreinfo"
     },
     {
         title: "Securely add a valid debit card",
@@ -272,12 +272,12 @@ export const toDoList = [
     {
         title: "Set your security question now!",
         isChecked: false,
-        href:"securityquestion"
+        href: "securityquestion"
     },
     {
         title: "Refer a friend, earn ₦1,000.00 bonus 🎉",
         isChecked: false,
-        href:"referfriend"
+        href: "referfriend"
     }
 ]
 
@@ -438,3 +438,23 @@ export const myAccount = [
         href: "/rate"
     },
 ]
+
+const generateYears = () => {
+    const years = [];
+    let startYear = 1938;
+    for (let i = 1; i <= 70; i++) {
+        years.push(`Year ${startYear}`);
+        startYear++;
+    }
+    return years;
+}
+export const moreInfoInputs = [
+    {
+        title: "Gender",
+        options: ["Gender", "Male", "Female"]
+    },
+    {
+        title: "Year of Birth",
+        options: generateYears()
+    }
+];

@@ -10,7 +10,6 @@ export const metadata = {
 }
 
 export default function RootLayout({children}) {
-  console.log('HI')
   return (
     <html lang="en" data-theme="light">
       <body className={`${inter.className} overflow-y-hidden`} >

@@ -6,11 +6,13 @@ import loginIcon from "../../public/images/login-logo.png"
 import loginIcon2 from "../../public/images/login-logo-2.png"
 import loginIcon3 from "../../public/images/login-logo-3.png"
 import loginIcon4 from "../../public/images/login-logo-4.png"
+import Form from './Form'
 const page = () => {
+
     return (
         <main className='bg-[#062863]  flex flex-col justify-center items-center gap-y-10 p-10'>
             <Link href={"/"} className='relative z-10'>
-                <Image src={logo} width={200} alt='logo'/>
+                <Image src={logo} width={200} alt='logo' />
             </Link>
 
             <div className='relative z-10 bg-white w-[37%] p-10 rounded-t-3xl rounded-br-3xl'>
@@ -18,24 +20,8 @@ const page = () => {
                     <h1 className='text-2xl font-bold text-[#083e9e]'>Login to your account</h1>
                     <p className='text-sm font-light text-[#4a5568]'>Securely login to your PiggyVest</p>
                 </div>
-                <form action="" className='flex flex-col gap-y-5'>
 
-                    <div className=''>
-                        <label className='text-xs font-semibold'>Email or Phone Number</label>
-                        <div className='bg-[#edf2f7] p-5 flex mt-3 rounded-md'>
-                            <input type="text" className='w-[100%] bg-transparent outline-none' />
-                        </div>
-                    </div>
-
-                    <div className=''>
-                        <label className='text-xs font-semibold'>Password</label>
-                        <div className='bg-[#edf2f7] p-5 flex mt-3 rounded-md'>
-                            <input type="password" className='w-[100%] bg-transparent outline-none' />
-                        </div>
-                    </div>
-                    <button className='mt-3 btn bg-[#0d60d8] p-4 text-white hover:bg-[#083e9e] rounded-bl-none'>LOG IN</button>
-                </form>
-
+                <Form />
             </div>
             <div className='relative z-10 flex flex-col justify-center items-center gap-y-3'>
                 <Link href={"/register"} className='text-white text-xs'>
