@@ -11,7 +11,7 @@ const Layout = ({children,sidebar}) => {
       <aside className={`w-[20%] h-[100vh] hidden lg:block`}>
         <DashboardNav />
       </aside>
-      <main className='relative p-5 lg:p-14  lg:w-[80%]' style={{overflowY:"auto", height:"100vh"}}>
+      <main className='relative p-5 lg:p-14 w-[100%]  lg:w-[80%]' style={{overflowY:"auto", height:"100vh"}}>
         {children}
        </main>
        {sidebar}

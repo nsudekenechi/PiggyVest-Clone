@@ -10,15 +10,14 @@ import ShowDashboardBalances from './ShowDashboardBalances'
 
 const Account = () => {
   return (
-    <div>
-      <div>
+      <div className='py-10'>
         <h1 className='text-3xl font-bold mb-1'>My Account</h1>
         <p className='text-[#718096] font-light '>Nsude Kenechi</p>
 
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-x-20'>
-          <div className="">
+        <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-x-20 '>
+          <div className="order-2 lg:order-1">
             <Link href={"/"} className='block my-10'>
-              <Image src={security} width={300} quality={100} className='rounded-xl' alt='security' />
+              <Image src={security} width={300} quality={100} className='rounded-xl w-[100%]' alt='security' />
             </Link>
 
             {myAccount.map((item, index) => (
@@ -36,10 +35,12 @@ const Account = () => {
               </Link>
             ))}
           </div>
-          <div className="col-span-2 p-5">
-            
+          <div className="lg:col-span-2 lg:p-5 order-1 lg:order-2 ">
+              <div className='p-10'>
+                      
             <ImageContainer/>
             <h1 className='text-2xl font-bold mb-1 text-center'>Nsude Kenechi</h1>
+              </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 py-5 gap-5">
                 <Link href={""} className='border  rounded-global p-5'>
                   <h1 className='text-xl font-semibold'>Get Flex Number</h1>
@@ -59,14 +60,13 @@ const Account = () => {
                 </Link>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-4 items-center">
+            <div className="grid grid-cols-4 items-center">
               <h1 className='font-semibold col-span-3'>Show Dashboard Balances</h1>
               <ShowDashboardBalances/>
             </div>
           </div>
         </div>
       </div>
-    </div>
   )
 }
 

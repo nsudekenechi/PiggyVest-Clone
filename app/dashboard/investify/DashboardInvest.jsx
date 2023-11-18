@@ -8,9 +8,9 @@ const DashboardInvest = () => {
 
     return (
         <div>
-            <div className='p-3 flex border-b relative gap-x-10'>
+            <div className='p-3 flex border-b relative gap-x-5 lg:gap-x-10'>
                 {dashboardInvest.map((item, index) => (
-                    <Link key={index} href={item.href} className={`flex items-center text-sm gap-x-2 ${path == item.href ? styles.active : 'text-gray-400'}`}>
+                    <Link key={index} href={item.href} className={`flex items-center text-xs lg:text-sm lg:gap-x-2 gap-x-1 ${path == item.href ? styles.active : 'text-gray-400'}`}>
                         <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" width={25} xmlns="http://www.w3.org/2000/svg">
                             {item.icon}
                         </svg>

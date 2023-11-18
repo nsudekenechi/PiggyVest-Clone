@@ -18,8 +18,8 @@ const layout = ({ children }) => {
                 </div>
             </header>
             <main className='grid grid-cols-1 lg:grid-cols-3 gap-x-10 py-10 relative'>
-                <div className="col-span-2   rounded-global ">
-                    <div className='border mb-20'>
+                <div className=" lg:col-span-2   rounded-global ">
+                    <div className='border mb-10'>
                         <div className='px-5 py-8'>
                             <p className='text-xs uppercase mb-2'>Total Balance</p>
                             <p className='text-4xl text-[#7913e5] font-bold'>
@@ -38,8 +38,8 @@ const layout = ({ children }) => {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div className="mb-5 border p-5 h-fit rounded-global">
+                <div >
+                    <div className="my-10 border p-5 h-fit rounded-global">
                         <p className='text-xs uppercase '>expected roi</p>
                         <h1 className='text-2xl text-[#7913e5] my-2'>Up to 25%</h1>
                         <p className='text-xs  mb-2'>Per Annum</p>

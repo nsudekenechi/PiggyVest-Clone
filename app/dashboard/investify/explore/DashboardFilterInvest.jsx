@@ -31,9 +31,9 @@ const DashboardFilterInvest = () => {
                 </div>
             </div>
             {selectedInvest.investments.map((item, index) => (
-                <Link href={"/"} key={index} className='grid grid-cols-3 gap-x-5 border-b py-5 p-3'>
+                <Link href={"/"} key={index} className='grid grid-cols-1  lg:grid-cols-3 gap-x-5 border-b py-5 p-3'>
                     <Image src={item.img} width={500} quality={100} alt='thumb' className='object-cover h-[150px] rounded-global' />
-                    <div className='col-span-2 '>
+                    <div className='lg:col-span-2 '>
                         <h1 className='text-xl font-bold '>{item.title}</h1>
                         <p className='text-xs' suppressHydrationWarning><span className='text-green-500' suppressHydrationWarning>{(Math.random() * 100).toFixed(2)}%</span> returns in {Math.floor(Math.random() * 12)} months</p>
                         <div className="grid grid-cols-3 py-5">
