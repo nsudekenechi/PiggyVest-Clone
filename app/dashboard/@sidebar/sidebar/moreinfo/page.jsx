@@ -5,7 +5,7 @@ import { RiArrowDownSLine } from 'react-icons/ri'
 import InputDropDown from '@/app/components/InputDropDown'
 import { moreInfoInputs } from '@/app/components/uidata'
 
-const page = () => {
+const Page = () => {
   const [inputs, setInputs] = useState([...moreInfoInputs].map(item => ({ ...item, isShowing: false })));
   const hideAll = (title) => {
     setInputs(prev => {
@@ -31,4 +31,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

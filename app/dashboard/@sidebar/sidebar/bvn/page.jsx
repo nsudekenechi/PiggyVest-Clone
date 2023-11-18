@@ -5,7 +5,7 @@ import React from 'react'
 import { LuUserCheck } from 'react-icons/lu'
 import Modal from '../Modal'
 
-const page = () => {
+const Page = () => {
   const router = useRouter()
   return (
     <Modal color="text-black">
@@ -41,4 +41,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
