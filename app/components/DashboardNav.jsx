@@ -47,9 +47,10 @@ const DashboardNav = () => {
         <ul className='grid grid-cols-4'>
           {dashboardNavs.map((item, index) => {
             const href = `/dashboard${item.right == "home" ? "" : item.right == "invest" ? "/investify" : `/${item.right}`}`
-            return index > 0 && index < dashboardNavs.length - 1 && <li>
+            return index > 0 && index < dashboardNavs.length - 1 && 
+            <li key={index}>
 
-              <Link href={href} key={index} className={`capitalize duration-500 ${pathname.split("/")[2] == href.split("/")[2] || pathname == href ? "text-[#000]" : "text-[#ccc]"} flex flex-col items-center gap-y-1 py-2 `}>
+              <Link href={href}  className={`capitalize duration-500 ${pathname.split("/")[2] == href.split("/")[2] || pathname == href ? "text-[#000]" : "text-[#ccc]"} flex flex-col items-center gap-y-1 py-2 `}>
                 <svg width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"  fill={`${pathname.split("/")[2] == href.split("/")[2] || pathname == href ? "#083e9e" : "#ccc"}`}>
                   {item.left}
 
