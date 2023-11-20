@@ -16,6 +16,7 @@ const Navbar = () => {
             } else {
                 setIsSticky(false)
             }
+            console.log(isSticky)
 
         }
     }, [])
@@ -73,12 +74,12 @@ const Navbar = () => {
 
                 <ul className='flex items-center gap-x-5'>
                     <li>
-                        <Link href={"/login"} className='btn btn-outline normal-case hover:text-[#122231] hover:bg-transparent'>
+                        <Link href={"/auth/login"} className='btn btn-outline normal-case hover:text-[#122231] hover:bg-transparent'>
                             Sign in
                         </Link>
                     </li>
                     <li>
-                        <Link href={"/register"} className='btn btn-neutral normal-case bg-[#122231] text-white'>
+                        <Link href={"/auth/register"} className='btn btn-neutral normal-case bg-[#122231] text-white'>
                             Create free account
                         </Link>
                     </li>

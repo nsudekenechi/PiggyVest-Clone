@@ -31,7 +31,7 @@ export default function Home() {
     animate: { opacity: 1 }
   }
   return (
-    <main className="bg-[#f2f7f8] h-[100vh] overflow-auto">
+    <main className="bg-[#f2f7f8] ">
       <Navbar />
       {/* Header */}
       <header className="relative top-[200px] lg:top-0 grid grid-cols-2  items-end lg:grid-cols-6  px-5  md:px-10 gap-y-20">
