@@ -7,5 +7,5 @@ export const GET = async (req, res) => {
     // DBConnect();
 
     // const users = await Users.find();
-    NextResponse.json({ message: "Hello" });
+  return  NextResponse.json({ message: "Hello" });
 }
