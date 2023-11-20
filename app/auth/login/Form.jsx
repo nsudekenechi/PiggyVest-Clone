@@ -17,6 +17,7 @@ const Form = () => {
         ev.preventDefault();
         
         setTimeout(() => {
+            setIsLoading(true);
             router.push("/dashboard")
         }, 3000)
     }
