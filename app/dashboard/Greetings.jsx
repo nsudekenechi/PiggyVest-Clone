@@ -3,7 +3,7 @@ import React from 'react'
 const Greetings = () => {
     const hour = new Date().getHours();
 
-    const greetings = hour >= 0 && hour <= 5 ? 'You should be in bed 🙄!' : hour > 5 && hour <= 11 ? 'Good Morning' : hour > 11 && hour <= 17 ? 'Good afternoon' : 'Good evening, wash your hands 🌙'
+    const greetings = hour >= 0 && hour <= 5 ? 'You should be in bed 🙄!' : hour > 5 && hour <= 11 ? 'Good morning, wash your hands 🌥️' : hour > 11 && hour <= 17 ? 'Good afternoon ' : 'Good evening, wash your hands 🌙'
 
     return (
         <div>
