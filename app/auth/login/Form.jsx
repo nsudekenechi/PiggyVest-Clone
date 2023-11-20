@@ -15,9 +15,9 @@ const Form = () => {
     const router = useRouter()
     const handleSubmit = async (ev) => {
         ev.preventDefault();
-        
+        setIsLoading(true);
+
         setTimeout(() => {
-            setIsLoading(true);
             router.push("/dashboard")
         }, 3000)
     }
